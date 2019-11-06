@@ -5,16 +5,23 @@ export const RECOMMEND = 'recommend'
 
 export function getHomeMultidata() {
   return axios({
-    url: '/home/multidata'
+    url: 'http://123.207.32.32:8000/home/multidata'
   })
 }
-
-export function getHomeData(type, page) {
+export function getHomeData(name) {
   return axios({
-    url: '/home/data',
+    url: 'https://www.apiopen.top/novelInfoApi',
     params: {
-      type,
-      page
+      name
     }
   })
 }
+// export function getHomeData(type, page) {
+//   return axios({
+//     url: '/home/data',
+//     params: {
+//       type,
+//       page
+//     }
+//   })
+// }
